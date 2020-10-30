@@ -1,0 +1,35 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+}
+
+@import "./varaibles";
+@import "./Mixins";
+@import "./extends";
+
+.center {
+  @extend verticleCenter;
+}
+
+.mg-20 {
+  @include marginTop(20px);
+}
+
+.mg-t-20 {
+  @include marginTop(20px);
+}
+
+.parent {
+  @extend parentElement;
+}
+
+.clearfix {
+  @include clearfix();
+}
