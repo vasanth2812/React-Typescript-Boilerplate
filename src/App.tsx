@@ -8,7 +8,6 @@ const ErrorPage = lazy(() => import("./modules/errorpage"));
 const App: FC = () => (
   <>
     <Suspense fallback={<div>Loading...</div>}>
-      <div>Welcome to React Typescript</div>
       <BrowserRouter>
         <Switch>
           <Route path="/" exact component={HomePage} />
